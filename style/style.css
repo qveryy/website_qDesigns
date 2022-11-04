@@ -1,0 +1,99 @@
+body {
+    background-color: white;
+    font-size: 100%;
+    margin: 0em;
+    padding: 0em;
+}
+
+
+#header {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    margin: 0em;
+    text-align: center;
+}
+
+#picture {
+    text-align: center;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+#Instagram {
+    color: rgba(185,55,140,255);
+    transition: 0.2s;
+    text-decoration: none;
+    margin: 49%;
+}
+
+#Instagram:hover {
+    color: rgba(116,66,185,255);
+}
+
+#Copyright {
+    text-align: center;
+    width: 100%;
+}
+
+#navigator {
+    text-align: center;
+}
+
+#navigator ul {
+    list-style: none;
+}
+
+#navigator li {
+    display: inline-block;
+    padding-top: 5px;
+
+    position: relative;
+}
+
+#navigator a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    transition: 0.2s;
+    font-weight: bold;
+}
+
+#navigator a:hover {
+    color: rgb(110, 110, 110);
+}
+
+#navigator a::before {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: rgb(110, 110, 110);
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+
+#navigator a:hover::before {
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    #picture {
+      background-image: url("picture1klein.png");
+      background-repeat: no-repeat;
+      background-size: contain ;
+    }
+  }
+@media (min-width: 481px) {
+    #picture {
+      background-image: url("picture.png");
+      background-repeat: no-repeat;
+      background-size: contain ;
+    }
+  }
